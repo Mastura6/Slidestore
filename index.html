@@ -1,32 +1,268 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slidestore</title>
-    <link rel="stylesheet" href="./main.css">
+    <meta name="description" content="ilmiyishlar.uz – Dasturlash, Matematika, Informatika va Pedagogika fanlari bo'yicha tayyor referatlar, mustaqil ishlar, laboratoriya va kurs ishlari platformasi.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
 </head>
 <body>
-    <header>
-        <h1>Xush kelibsiz!</h1>
-        <nav>
-            <ul>
-                <li><a href="#" >bosh sahifa</a></li>
-                <li><a href="#" >mahsulotlar</a></li>
-                <li><a href="#" >aloqa</a></li>
-
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">ilmiyishlar<span>.uz</span></a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#" class="nav-link active">Bosh sahifa</a></li>
+                <li><a href="#referatlar" class="nav-link">Referatlar</a></li>
+                <li><a href="#mustaqil-ishlar" class="nav-link">Mustaqil ishlar</a></li>
+                <li><a href="#prezentatsiyalar" class="nav-link">Prezentatsiyalar</a></li>
+                <li><a href="#maqolalar" class="nav-link">Maqolalar</a></li>
+                <li><a href="#laboratoriya-ishlari" class="nav-link">Laboratoriya ishlari</a></li>
+                <li><a href="#kurs-ishlari" class="nav-link">Kurs ishlari</a></li>
+                <li><a href="#contact" class="nav-link">Kontakt</a></li>
+                <li><a href="#" class="btn btn-small">Kirish</a></li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="container">
-            <h2>Bizning mahsulotlar</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, optio suscipit. Officia cumque ducimus quod reprehenderit nesciunt placeat deleniti fuga quae ex vel tempore quam quas consequatur repellendus, praesentium inventore!</p>
         </div>
-    </main>
-    <footer>    
-        <p>uzbekistan2026</p>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">O'zingiz uchun tayyor ilmiy ishlar va referatlar!</h1>
+<p class="hero-text">Dasturlash, Matematika, Informatika, Pedagogika fanlari bo'yicha materiallar. Yuqori sifatli va zamonaviy akademik materiallarni bir joyda toping.</p>
+
+                <div class="hero-buttons">
+                    <a href="#categories" class="btn btn-primary">Materiallarni ko'rish</a>
+                    <a href="#material-types" class="btn btn-secondary">Barcha turdagi ishlar</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <i class="fas fa-graduation-cap"></i>
+                    <i class="fas fa-book"></i>
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">Fanlar bo'yicha materiallar</h2>
+            <p class="section-subtitle">Kerakli fan bo'yicha tayyor materiallarni yuklab oling</p>
+            
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="category-title">Dasturlash</h3>
+                    <p class="category-description">Python, Java, C++, JavaScript va boshqa dasturlash tillari bo'yicha materiallar</p>
+                    <a href="#" class="category-link">Materiallarni ko'rish <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3 class="category-title">Matematika</h3>
+                    <p class="category-description">Algebra, geometriya, analiz, statistika va boshqa matematika bo'limlari</p>
+                    <a href="#" class="category-link">Materiallarni ko'rish <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3 class="category-title">Informatika</h3>
+                    <p class="category-description">Ma'lumotlar tuzilmasi, algoritmlar, tarmoq va kompyuter fanlari</p>
+                    <a href="#" class="category-link">Materiallarni ko'rish <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3 class="category-title">Pedagogika</h3>
+                    <p class="category-description">Ta'lim metodikasi, psixologiya, pedagogik texnologiyalar materiallari</p>
+                    <a href="#" class="category-link">Materiallarni ko'rish <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Material Types Section -->
+    <section class="material-types" id="material-types">
+        <div class="container">
+            <h2 class="section-title">Material turlari</h2>
+            <p class="section-subtitle">Turli xil ilmiy ishlar va materiallar</p>
+            
+            <div class="materials-grid">
+                <div class="material-card">
+                    <div class="material-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3 class="material-title">Referatlar</h3>
+                    <p class="material-count">500+ ta referat</p>
+                    <p class="material-description">Turli mavzular bo'yicha referatlar va tezislar</p>
+                </div>
+                
+                <div class="material-card">
+                    <div class="material-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3 class="material-title">Mustaqil ishlar</h3>
+                    <p class="material-count">300+ ta mustaqil ish</p>
+                    <p class="material-description">Talabalarning mustaqil ta'lim ishlari</p>
+                </div>
+                
+                <div class="material-card">
+                    <div class="material-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="material-title">Prezentatsiyalar</h3>
+                    <p class="material-count">450+ ta prezentatsiya</p>
+                    <p class="material-description">PowerPoint va boshqa formatdagi prezentatsiyalar</p>
+                </div>
+                
+                <div class="material-card">
+                    <div class="material-icon">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <h3 class="material-title">Maqolalar</h3>
+                    <p class="material-count">200+ ta ilmiy maqola</p>
+                    <p class="material-description">Ilmiy jurnallar uchun tayyor maqolalar</p>
+                </div>
+                
+                <div class="material-card">
+                    <div class="material-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3 class="material-title">Laboratoriya ishlari</h3>
+                    <p class="material-count">180+ ta laboratoriya ishi</p>
+                    <p class="material-description">Laboratoriya tajribalari bo'yicha hisobotlar</p>
+                </div>
+                
+                <div class="material-card">
+                    <div class="material-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="material-title">Kurs ishlari</h3>
+                    <p class="material-count">120+ ta kurs ishi</p>
+                    <p class="material-description">Kurs loyihalari va yakuniy ishlar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="footer-logo">ilmiyishlar<span>.uz</span></a>
+                    <p class="footer-description">Akademik materiallar platformasi. O'quvchilar va talabalar uchun tayyor ilmiy ishlar, referatlar va boshqa materiallar.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Materiallar</h4>
+                    <ul class="footer-links">
+                        <li><a href="#referatlar">Referatlar</a></li>
+                        <li><a href="#mustaqil-ishlar">Mustaqil ishlar</a></li>
+                        <li><a href="#prezentatsiyalar">Prezentatsiyalar</a></li>
+                        <li><a href="#maqolalar">Maqolalar</a></li>
+                        <li><a href="#laboratoriya-ishlari">Laboratoriya ishlari</a></li>
+                        <li><a href="#kurs-ishlari">Kurs ishlari</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Fanlar</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Dasturlash</a></li>
+                        <li><a href="#">Matematika</a></li>
+                        <li><a href="#">Informatika</a></li>
+                        <li><a href="#">Pedagogika</a></li>
+                        <li><a href="#">Fizika</a></li>
+                        <li><a href="#">Kimyo</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Kontakt</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> info@ilmiyishlar.uz</li>
+                        <li><i class="fab fa-telegram"></i> @ilmiyishlar_uz</li>
+                        <li><i class="fas fa-phone"></i> +998 90 123 45 67</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Toshkent shahar</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2023 ilmiyishlar.uz - Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
     </footer>
-    
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('show');
+        });
+        
+        // Close mobile menu when clicking on a link
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                const navMenu = document.getElementById('navMenu');
+                navMenu.classList.remove('show');
+            });
+        });
+        
+        // Add active class to nav links on scroll
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}` || 
+                   (link.getAttribute('href') === '#' && current === '')) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
